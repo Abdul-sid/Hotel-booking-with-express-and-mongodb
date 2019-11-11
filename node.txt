@@ -1,0 +1,26 @@
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "your email",
+        pass: "your password"
+      }
+    });
+    console.log(112);
+
+    var mailOptions = {
+      from: "abrar.khurshid.120@gmail.com",
+      to: emailToSent, //receiver email
+      subject: "Dialogflow Mail...",
+      text: "Email from the Dialogflow bot"
+    };
+console.log(emailToSent);
+    transporter.sendMail(mailOptions, function (error, info) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log('Email sent:', mailOptions);
+        agent.add(`We send you mail please check`);
+      }
+    })
+    console.log('Success');

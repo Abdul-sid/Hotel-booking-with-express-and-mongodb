@@ -1,0 +1,20 @@
+{
+  "name": "hotel-booking-express-and-mongodb",
+  "version": "1.0.0",
+  "description": "hotel booking bot with express and mondodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Ibrar",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "actions-on-google": "^2.6.0",
+    "body-parser": "^1.18.3",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "nodemailer": "^5.1.1"
+  }
+}
